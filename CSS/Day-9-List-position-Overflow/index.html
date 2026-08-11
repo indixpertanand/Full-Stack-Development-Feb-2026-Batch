@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>List & Position</h1></header>
+    <main>
+        <section>
+            <h2>Removing List Style</h2>
+            <ul class="list-unstyled">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+            <ol class="list-unstyled">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Changing List Style</h2>
+            <ul class="list-roman">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+            <ol class="list-square">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ol>
+            <ol class="list-leading-zero">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Custom List Style</h2>
+            <ul class="list-unstyled custom-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+            <ol class="list-unstyled custom-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Position Static</h2>
+            <div class="container">
+                <div class="box"></div>
+                <div class="box position-static top-30 left-30"></div>
+            </div>
+        </section>
+        <section>
+            <h2>Position Relative</h2>
+            <div class="container">
+                <div class="box"></div>
+                <div class="box position-relative bottom-30 left-30"></div>
+                <div class="box"></div>
+            </div>
+        </section>
+        <section class=" ">
+            <h2>Position Absolute</h2>
+            <div class="container position-relative">
+                <div class="box"></div>
+                <div class="box position-absolute top-30 left-30 right-30 bottom-30">Box 2</div>
+                <div class="box">Box 3</div>
+            </div>
+        </section>
+        <section class=" ">
+            <h2>Position Fixed</h2>
+            <div class="container position-relative">
+                <div class="box"></div>
+                <div class="box position-fixed bottom-30 right-30">Box 2 Fixed</div>
+                <div class="box">Box 3</div>
+            </div>
+        </section>
+        <section class=" ">
+            <h2>Position Sticky</h2>
+            <div class="container position-relative">
+                <div class="box"></div>
+                <div class="box position-sticky top-30 ">Box 2 Sticky</div>
+                <div class="box">Box 3</div>
+                <div class="box">Box 4</div>
+                <div class="box">Box 5</div>
+                <div class="box">Box 6</div>
+                <div class="box">Box 7</div>
+                <div class="box">Box 8</div>
+            </div>
+        </section>
+        <section class="vh-100"></section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* p{
+            color: purple
+        } */
+        #special{
+            color: green;
+        }
+        .highlight{
+            color: blue;
+        }
+        /* p{
+            color: yellow
+        } */
+        p{
+            color: red;
+        }
+
+        main .highlight{
+            color: brown;
+        }
+        p.highlight{
+            color:chocolate;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p class="highlight" id="special">This is a paragraph</p>
+    </main>
+</body>
+</html>

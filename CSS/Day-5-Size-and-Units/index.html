@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Size & Units</title>
+    <style>
+        .box{
+            background-color: bisque;
+            border: 1px solid red;
+        }
+        .box-1{
+            width: 800px;
+            height: 300px;
+        }
+        .box-2{
+            min-width: 800px;
+            min-height: 300px;
+            height: 300px;
+        }
+        .box-3{
+            max-width: 800px;
+            max-height: 300px;
+        }
+        .box-4{
+            width: min-content
+        }
+        .box-5{
+            width: max-content
+        }
+        .box-6{
+            width: fit-content
+        }
+        .box-7{
+            width: auto
+        }
+        .box-8{
+            width: 50%;
+            height: 50%;
+
+        }
+        h2 .em{
+            font-size: 1.5em;
+        }
+        /* mobile css */
+        h2{
+            font-size: 20px
+        }
+
+        h2 .rem{
+            font-size: 1.5rem;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Size & Units</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Size</h2>
+            <h3>Width & Height</h3>
+            <div class="box box-1">Box 1</div>
+            <h3>min-width & min-height</h3>
+            <div class="box box-2">
+                Box 2
+                <h4>% units</h4>
+                <div class="box box-8">Box 8</div>
+
+            </div>
+            <h3>max-width & max-height</h3>
+            <div class="box box-3">Box 3</div>
+            
+            <h3>min-content</h3>            
+            <div class="box box-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, suscipit?</div>
+            <div class="box box-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, suscipit?</div>
+            <h3>max-content</h3>
+            <div class="box box-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, suscipit?</div>
+            <h3>fit-content</h3>
+            <div class="box box-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, suscipit?</div>
+        
+        
+            <h2>This word is less <span class="em">Important</span></h2>
+            <h2>This word is less <span class="rem">Important</span></h2>
+        </section>
+    </main>
+</body>
+</html>

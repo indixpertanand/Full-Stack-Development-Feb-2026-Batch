@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        *{
+            margin: 0
+        }
+        /* p{
+            color: gray;
+        } */
+        #main-heading{
+            color: red;
+        }
+
+        .text-gray{
+            color: gray;
+        }
+        p, li{
+            font-size: 18px;
+        }
+        button[disabled]{
+            color: red;
+            background: black;
+        }
+        input[type="text"]{
+            border: 1px solid green
+        }
+
+        a[href^="https"]{
+            color: purple;
+        }
+
+        a[href$=".pdf"]{
+            color: aqua;
+        }
+        p[class*="lig"]{
+            color: green;
+        }
+
+        p[class~="blue-text"]{
+            color: coral;
+        }
+
+        section p{
+            text-decoration: underline;
+        }
+        section > p{
+            background-color: bisque;
+        }
+        h2 + p{
+            background-color: lightseagreen;
+        }
+        h2 ~ p{
+            background-color: lightcyan;
+        }
+        /* this is a single line comment */
+        /* this is 
+        a multi line
+         comment
+          */
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="main-heading">CSS Selectors</h1>
+    </header>
+    <main>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, exercitationem?</p>
+            <h2>Universal Selector (*)</h2>
+            <p class="text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime similique ducimus eos magni sit quam et fugit id enim sapiente!</p>
+            <ul class="text-gray">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+            <p class="text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime similique ducimus eos magni sit quam et fugit id enim sapiente!</p>
+            <div>
+                <p class="text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime similique ducimus eos magni sit quam et fugit id enim sapiente!</p>
+                <div>
+                    <p class="text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime similique ducimus eos magni sit quam et fugit id enim sapiente!</p>
+                </div>
+            </div>
+            <p class="text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime similique ducimus eos magni sit quam et fugit id enim sapiente!</p>
+            <button disabled>Click me</button>
+            <button>Click me</button>
+
+            <input type="text" value="Anand">
+            <input type="number" value="123456">
+            <input type="radio" value="Anand">
+            <input type="checkbox" value="Anand">
+
+            <a href="#">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://indixpert.com">Visit Indixpert</a>
+            <a href="https://indixpert.pdf">Dwonload PDF</a>
+            <p class="bluetext light">Match Word</p>
+            <p class="blue-text">Match Word</p>
+
+        </section>
+    </main>
+</body>
+</html>

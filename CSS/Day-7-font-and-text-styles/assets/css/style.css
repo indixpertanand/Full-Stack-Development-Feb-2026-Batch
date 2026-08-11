@@ -1,0 +1,86 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Typography */
+/* @font-face {
+    font-family: "Montserrat";
+    src: url("./../fonts/Montserrat-VariableFont_wght.ttf");
+} */
+
+body{
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 3rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+h2{
+    font-style: oblique;
+}
+h1, h2, h3, h4{
+    margin-bottom: .875rem;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+.font-normal{
+    font-style: normal;
+}
+.font-smallcaps{
+    font-variant: small-caps;
+}
+.font{
+    font: small-caps 200 italic 2rem/1.5rem "Montserrat", sans-serif
+}
+
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-justify{
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+}
+.text-underline{
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+.text-overline{
+    text-decoration: overline;
+    text-decoration-style: dotted;
+}
+.text-linethrough{
+    text-decoration: line-through;
+    text-decoration-style:wavy;
+    text-decoration-color: red;
+}
+
+.text-lowercase{
+    text-transform: lowercase;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-titlecase{
+    text-transform: capitalize;
+}
+
+.text-shadow{
+    font-style: normal;
+    text-shadow: 2px 2px 4px red;
+}

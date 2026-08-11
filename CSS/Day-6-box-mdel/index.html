@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border{
+            border: 1px solid red
+        }
+        .padding-left{
+            padding-left: 20px;
+            border: 5px dotted red
+        }
+        .padding-right{
+            padding-right: 20px;
+            border: 5px double hsl(120, 100%, 50%)
+        }
+        .padding-top{
+            padding-top: 20px;
+             border: 5px dashed #00f
+        }
+        .padding-bottom{
+            padding-bottom: 20px;
+             border: 5px groove red
+        }
+        .padding-inline{
+            /* padding-inline: 20px; */
+            padding-inline: 20px 10px;
+            /* padding-inline-start: 20px;
+            padding-inline-end: 10px; */
+            border-left: 3px solid rgb(185, 99, 6);
+            border-right: 3px solid rgb(185, 99, 6)
+        }
+        .padding-block{
+            /* padding-block: 20px; */
+            /* padding-block: 20px 30px; */
+            padding-block-start: 20px;
+            padding-block-end: 30px;
+            border-top-width: 4px;
+            border-bottom-width: 4px;
+        }
+        .padding{
+            /* padding: 20px; */
+            /* padding: 20px 30px; */
+            /* padding: 20px 30px 40px; */
+            padding: 20px 30px 40px 50px;
+            border-style: dashed;
+            width: 300px;
+            box-sizing: border-box;
+        }
+        .margin-left{
+            margin-left: 20px;
+        }
+        .margin-right{
+            margin-right: 20px;
+        }
+        .margin-top{
+            margin-top: 20px;
+        }
+        .margin-bottom{
+            margin-bottom: 20px;
+        }
+        .margin-inline{
+            /* margin-inline: 20px; */
+            margin-inline: 20px 10px;
+            /* margin-inline-start: 20px;
+            margin-inline-end: 10px; */
+        }
+        .margin-block{
+            /* margin-block: 20px; */
+            /* margin-block: 20px 30px; */
+            margin-block-start: 20px;
+            margin-block-end: 30px;
+        }
+        .margin{
+            /* margin: 20px; */
+            /* margin: 20px 30px; */
+            /* margin: 20px 30px 40px; */
+            margin: 20px 30px 40px 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <p class="border padding-left">Padding left</p>
+        <p class="border padding-right">padding right</p>
+        <p class="border padding-top">padding top</p>
+        <p class="border padding-bottom">padding bottom</p>
+        <p class="border padding-inline">padding inline</p>
+        <p class="border padding-block">padding block</p>
+        <p class="border padding">padding </p>
+
+        <p class="border margin-left">Margin left</p>
+        <p class="border margin-right">margin right</p>
+        <p class="border margin-top">margin top</p>
+        <p class="border margin-bottom">margin bottom</p>
+        <p class="border margin-inline">margin inline</p>
+        <p class="border margin-block">margin block</p>
+        <p class="border margin">margin </p>
+        <span class="border">Inline text</span>
+        <span class="border">Another inline text</span>
+        <div>A block level e;lement</div>
+    </main>
+</body>
+</html>

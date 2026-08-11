@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <style>
+        .swiper-button-container{
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .container{
+            max-width: 90%;
+            margin-inline: auto;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .align-items-center{
+            align-items: center;
+        }
+        .justify-content-between{
+            justify-content: space-between;
+        }
+        .swiper-slide{
+            height: 150px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container d-flex justify-content-between align-items-center">
+            <h2>My Swiper</h2>
+            <div class="swiper-button-container">
+                <div class="prev">Prev</div>
+                <div class="next">Next</div>
+            </div>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1.2,
+            slidesPerGroupSkip: 1,
+            spaceBetween: 10,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".next",
+                prevEl: ".prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20,
+                    slidesPerGroupSkip: 1,
+                },
+                768: {
+                    slidesPerView: 2.3,
+                    spaceBetween: 40,
+                    
+                    slidesPerGroupSkip: 2,
+                },
+                1024: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 50,
+                    slidesPerGroupSkip: 3,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

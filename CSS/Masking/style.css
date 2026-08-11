@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding-bottom: 3rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.box{
+    height: 200px;
+    border: 1px solid red;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-1{
+    background-image: url('./images/bg-image-1.jfif');
+    mask-image: url('./images/mask-shape-1.webp');
+    mask-size: contain;
+}
+.box-2{
+    background-image: url('./images/bg-image-2.jfif');
+    mask-image: url('./images/mask-shape-1.webp');
+    mask-size: cover;
+}
+.box-3{
+    background-image: url('./images/bg-image-2.jfif');
+    mask-image: linear-gradient(to bottom, black 40%, transparent);
+}
+.box-4{
+    background-image: url('./images/bg-image-2.jfif');
+    mask-image: linear-gradient(-45deg, transparent 42%, black 42% 56%, transparent 56%),
+    linear-gradient(45deg, transparent 42%, black 42% 56%, transparent 56%),
+    linear-gradient(90deg, transparent 42%, black 42% 56%, transparent 56%),
+    radial-gradient(circle at center, transparent 42%, black 42% 56%, transparent 56%);
+    mask-composite: add;
+}
+.box-5{
+    background-image: url('./images/bg-image-2.jfif');
+    mask-image: linear-gradient(-45deg, transparent 42%, black 42% 56%, transparent 56%),
+    linear-gradient(45deg, transparent 42%, black 42% 56%, transparent 56%),
+    linear-gradient(90deg, transparent 42%, black 42% 56%, transparent 56%),
+    radial-gradient(circle at center, transparent 42%, black 42% 56%, transparent 56%);
+    mask-composite: subtract;
+}
+.box-6{
+    background-image: url('./images/bg-image-2.jfif');
+    mask-image: linear-gradient(-45deg, transparent 42%, black 42% 56%, transparent 56%),
+    linear-gradient(45deg, transparent 42%, black 42% 56%, transparent 56%),
+    linear-gradient(90deg, transparent 42%, black 42% 56%, transparent 56%),
+   radial-gradient(circle at center, transparent 42%, black 42% 56%, transparent 56%); 
+    mask-composite: exclude;
+}
+
+.box-7{
+    background-image: conic-gradient(white 25%, black 25% 50%, white 50% 75% , black 75%);
+    background-size: 50px 50px;
+    background-repeat: repeat;
+}
+.box-8{
+    background-image: conic-gradient(from 45deg at 50% 50px,red , green, blue);
+   
+}
+

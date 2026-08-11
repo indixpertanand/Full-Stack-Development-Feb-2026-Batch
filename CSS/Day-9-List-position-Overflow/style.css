@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+.list-unstyled{
+    list-style: none;
+    padding-left: 0
+}
+
+.list-square{
+    list-style-type: square;
+}
+
+.list-roman{
+    list-style-type: lower-roman;
+}
+
+.list-leading-zero{
+    list-style-type: decimal-leading-zero;
+}
+
+.custom-list li::before{
+    /* list-style-image: url("./images/right-pointer.png") ; */
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    background: url('./images/right-pointer.png') no-repeat center/contain;
+}
+
+
+
+.container{
+    border: 2px solid red;
+    max-width: 300px;
+    padding: 10px;
+}
+
+.box{
+    height: 150px;
+    border: 2px solid green
+}
+.left-30{
+    left: 30px;
+}
+.right-30{
+    right: 30px;
+}
+.top-30{
+    top: 30px;
+}
+.bottom-30{
+    bottom: 30px;
+}
+.position-static{
+    position: static;    
+}
+.position-relative{
+    position: relative;    
+}
+.position-absolute{
+    position: absolute;  
+    height: auto  
+}
+.position-fixed{
+    position: fixed;  
+}
+.position-sticky{
+    position: sticky;
+}
+
+.vh-100{
+    min-height: 100vh
+}

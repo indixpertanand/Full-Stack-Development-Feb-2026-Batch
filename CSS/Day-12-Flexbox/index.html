@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Flexbox</h1>
+    </header>
+    <main>
+        <section >
+            <div class="flex-container">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Item 2</div>
+                <div class="flex-item box">Item 3</div>
+                <div class="flex-item box">Item 4</div>
+                <div class="flex-item box">Item 5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil modi nesciunt incidunt aperiam ipsum sunt vitae ipsa molestias consequuntur ad.</div>
+            </div>
+        </section>
+        <section >
+            <h2>Flex Direction</h2>
+            <h3>Row</h3>
+            <div class="flex-container flex-row">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Item 2</div>
+                <div class="flex-item box">Item 3</div>
+                <div class="flex-item box">Item 4</div>
+                <div class="flex-item box">Item 5</div>
+            </div>
+            <h3>Row reverse</h3>
+            <div class="flex-container flex-row-reverse">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Item 2</div>
+                <div class="flex-item box">Item 3</div>
+                <div class="flex-item box">Item 4</div>
+                <div class="flex-item box">Item 5</div>
+            </div>
+            <h3>Column</h3>
+            <div class="flex-container flex-column">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Item 2</div>
+                <div class="flex-item box">Item 3</div>
+                <div class="flex-item box">Item 4</div>
+                <div class="flex-item box">Item 5</div>
+            </div>
+            <h3>Column Reverse</h3>
+            <div class="flex-container flex-column-reverse">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Item 2</div>
+                <div class="flex-item box">Item 3</div>
+                <div class="flex-item box">Item 4</div>
+                <div class="flex-item box">Item 5</div>
+            </div>
+        </section>
+        <section >
+            <h2>Flex Wrap</h2>
+            <div class="flex-container flex-wrap">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Item 2</div>
+                <div class="flex-item box">Item 3</div>
+                <div class="flex-item box">Item 4</div>
+                <div class="flex-item box">Item 5</div>
+                <div class="flex-item box">Item 6</div>
+                <div class="flex-item box">Item 7</div>
+            </div>
+            <h3>Wrap Reverse</h3>
+            <div class="flex-container flex-wrap-reverse">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Item 2</div>
+                <div class="flex-item box">Item 3</div>
+                <div class="flex-item box">Item 4</div>
+                <div class="flex-item box">Item 5</div>
+                <div class="flex-item box">Item 6</div>
+                <div class="flex-item box">Item 7</div>
+            </div>
+        </section>
+        <section >
+            <h2>Justify Content</h2>
+            <h3>Center</h3>
+            <div class="flex-container justify-center flex-wrap">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Item 2</div>
+                <div class="flex-item box">Item 3</div>
+                <div class="flex-item box">Item 4</div>
+                <div class="flex-item box">Item 5</div>
+                <div class="flex-item box">Item 6</div>
+            </div>
+            <h3>End</h3>
+            <div class="flex-container justify-end flex-wrap">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Item 2</div>
+                <div class="flex-item box">Item 3</div>
+                <div class="flex-item box">Item 4</div>
+                <div class="flex-item box">Item 5</div>
+                <div class="flex-item box">Item 6</div>
+            </div>
+            <h3>Between</h3>
+            <div class="flex-container justify-between flex-wrap">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Item 2</div>
+                <div class="flex-item box">Item 3</div>
+                <div class="flex-item box">Item 4</div>
+                <div class="flex-item box">Item 5</div>
+                <div class="flex-item box">Item 6</div>
+                <div class="flex-item box">Item 7</div>
+            </div>
+            <h3>Evenly</h3>
+            <div class="flex-container justify-evenly flex-wrap">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Item 2</div>
+                <div class="flex-item box">Item 3</div>
+                <div class="flex-item box">Item 4</div>
+                <div class="flex-item box">Item 5</div>
+                <div class="flex-item box">Item 6</div>
+                <div class="flex-item box">Item 7</div>
+            </div>
+        </section>
+        <section>
+            <h2>Align Items</h2>
+            <h3>flex Start</h3>
+            <div class="flex-container align-start">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Lorem, ipsum dolor.</div>
+                <div class="flex-item box">Lorem ipsum dolor sit amet.</div>
+                <div class="flex-item box">Item 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, qui?</div>
+                <div class="flex-item box">Item 5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cumque iste temporibus ut nam tempore dignissimos nihil sint aliquam suscipit?</div>
+            </div>
+            <h3>flex End</h3>
+            <div class="flex-container align-end">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Lorem, ipsum dolor.</div>
+                <div class="flex-item box">Lorem ipsum dolor sit amet.</div>
+                <div class="flex-item box">Item 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, qui?</div>
+                <div class="flex-item box">Item 5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cumque iste temporibus ut nam tempore dignissimos nihil sint aliquam suscipit?</div>
+            </div>
+            <h3>flex End with flex column</h3>
+            <div class="flex-container flex-column align-center">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Lorem, ipsum dolor.</div>
+                <div class="flex-item box">Lorem ipsum dolor sit amet.</div>
+                <div class="flex-item box">Item 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, qui?</div>
+                <div class="flex-item box">Item 5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cumque iste temporibus ut nam tempore dignissimos nihil sint aliquam suscipit?</div>
+            </div>
+            <h3>flex Center</h3>
+            <div class="flex-container align-center">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Lorem, ipsum dolor.</div>
+                <div class="flex-item box">Lorem ipsum dolor sit amet.</div>
+                <div class="flex-item box">Item 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, qui?</div>
+                <div class="flex-item box">Item 5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cumque iste temporibus ut nam tempore dignissimos nihil sint aliquam suscipit?</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Gap</h2>
+             <div class="flex-container flex-wrap gap">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box">Item 2</div>
+                <div class="flex-item box">Item 3</div>
+                <div class="flex-item box">Item 4</div>
+                <div class="flex-item box">Item 5</div>
+                <div class="flex-item box">Item 6</div>
+                <div class="flex-item box">Item 7</div>
+                <div class="flex-item box">Item 8</div>
+            </div>
+        </section>
+        <section>
+            <h2>Flex property</h2>
+            <h3>Flex Grow</h3>
+             <div class="flex-container flex-wrap gap">
+                <div class="flex-item box grow-1">Item 1</div>
+                <div class="flex-item box grow-1">Item 2</div>
+                <div class="flex-item box grow-1">Item 3</div>
+            </div>
+            <h3>Flex Shrink</h3>
+             <div class="flex-container gap ">
+                <div class="flex-item box shrink-0">Item 1</div>
+                <div class="flex-item box shrink-0 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aut fugiat corrupti quia quisquam repudiandae nihil corporis dolorum sequi assumenda!</div>
+                <div class="flex-item box shrink-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aut fugiat corrupti quia quisquam repudiandae nihil corporis dolorum sequi assumenda!</div>
+            </div>
+        </section>
+        <section>
+            <h2>Align Self</h2>
+             <div class="flex-container gap align-center">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box self-stretch">Lorem ipsum dolor sit.</div>
+                <div class="flex-item box">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+            </div>
+        </section>
+        <section>
+            <h2>Order</h2>
+             <div class="flex-container gap align-center">
+                <div class="flex-item box">Item 1</div>
+                <div class="flex-item box order-3">Item 2</div>
+                <div class="flex-item box order-1">Item 3</div>
+                <div class="flex-item box">Item 4</div>
+                <div class="flex-item box order-2">Item 5</div>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>

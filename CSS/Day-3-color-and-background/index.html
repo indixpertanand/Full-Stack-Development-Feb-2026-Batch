@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color & Background</title>
+    <style>
+        .named-color{
+            color: rgb(210, 4, 4);
+        }
+        .hex-color{
+            color: #FF9500;
+        }
+        .rgb-color{
+            color: rgb(177, 55, 55);
+        }
+        .hsl-color{
+            color: hsl(0, 100%, 50%);
+        }
+        .hex-transparent{
+            color: #ff000055    
+        }
+        .rgb-transparent{
+            color: rgba(255, 0, 0, .5); 
+        }
+        .hsl-transparent{
+            color: hsla(0, 100%, 50%, 50%); 
+        }
+        .box{
+            width: 350px;
+            height: 150px;
+            display: inline-block;
+            margin-right: 10px;
+            border: 1px solid red
+        }
+
+        .bg-red{
+            background-color: red;
+        }
+        .bg-green{
+            background: rgb(0, 255, 0);
+        }
+        .bg-image{
+            background-image: url('./images/ksKX8fXZ_cd6a13664f6f4eed88502c5a073a7047.jpg');
+            background-size: cover
+        }
+        .contain{
+            background-size: contain
+        }
+        .sized{
+            background-size: 40px 40px
+        }
+        .no-repeat{
+            background-repeat: no-repeat;
+        }
+        .repeat-x{
+            background-repeat: repeat-x;
+        }
+        .repeat-y{
+            background-repeat: repeat-y;
+        }
+        .bg-center{
+            background-position: right bottom;
+        }
+        .attachment-fixed{
+            background-attachment: fixed;
+            height: 400px
+        }
+        .bg-image1{
+            /* background-color: #f00;
+            background-image: url("./images/ksKX8fXZ_cd6a13664f6f4eed88502c5a073a7047.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat; */
+            background: 
+                url('./images/shopping.webp') no-repeat center/contain,
+                linear-gradient(#00000088, #ff000088) center/cover,
+                #f00 url("./images/ksKX8fXZ_cd6a13664f6f4eed88502c5a073a7047.jpg") no-repeat center/cover fixed;
+        }
+        .linear-gradient-default{
+            background-image: linear-gradient(#000000, #ff0000);
+        }
+        .linear-gradient-direction{            
+            /* background-image: linear-gradient(to top, #000000, #ff0000); from bottom to top */
+            /* background-image: linear-gradient(to right, #000000, #ff0000); from left to right */
+            /* background-image: linear-gradient(to left, #000000, #ff0000); from right to left */
+            background-image: linear-gradient(120deg, #000000 40%, #ff0000 60%); 
+        }
+        .radial-gradient-1{
+            background-image: radial-gradient(#000 20%, #f00 20% 60%, #0f0 60%);
+        }
+        .radial-gradient-2{
+            background-image: radial-gradient(circle at 20% 20%, #000, #f00, #0f0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Color & Background</h1>
+    </header>
+    <body>
+        <h2 class="named-color">Named Color</h2>
+        <h2 class="hex-color">Hex Color</h2>
+        <h2 class="rgb-color">RGB Color</h2>
+        <h2 class="hsl-color">HSL Color</h2>
+        <h2 class="hex-transparent">Hex Transparent</h2>
+        <h2 class="rgb-transparent">RGB Transparent</h2>
+        <h2 class="hsl-transparent">HSL Transparent</h2>
+
+        <div class="box bg-red">
+
+        </div>
+        <div class="box bg-green">
+
+        </div>
+        <div class="box bg-image">
+
+        </div>
+        <div class="box bg-image">
+
+        </div>
+        <div class="box bg-image contain">
+
+        </div>
+        <div class="box bg-image sized no-repeat">
+
+        </div>
+        <div class="box bg-image sized repeat-x">
+
+        </div>
+        <div class="box bg-image sized repeat-y">
+
+        </div>
+        <div class="box bg-image sized no-repeat bg-center">
+
+        </div>
+
+        <div class="attachment-fixed bg-image">
+
+        </div>
+        <div class="attachment-fixed ">
+
+        </div>
+        <div class="attachment-fixed bg-image1">
+
+        </div>
+        <div class="box linear-gradient-default">
+
+        </div>
+        <div class="box linear-gradient-direction">
+
+        </div>
+        <div class="box radial-gradient-1">
+
+        </div>
+        <div class="box radial-gradient-2">
+
+        </div>
+        
+        <div class="attachment-fixed ">
+
+        </div>
+    </body>
+</body>
+</html>

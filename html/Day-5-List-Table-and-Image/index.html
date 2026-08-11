@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>List, Table & Images</h1>
+    </header>
+    <main>
+        <section>
+            <h2>List</h2>
+            <h3>Unordered Lists</h3>
+            <ul type="disc">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+            <ul type="square">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+            <ul type="circle">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>
+                    Item 5
+                    <ul type="square">
+                        <li>Item 6</li>
+                        <li>Item 7</li>
+                        <li>Item 8</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Ordered Lists</h3>
+            <ol type="1" >
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ol>
+            <ol type="a">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ol>
+            <ol type="A">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ol>
+            <ol type="I">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ol>
+            <ol type="i">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5
+                    <ul>
+                        <li>Item 6</li>
+                        <li>Item 7</li>
+                        <li>Item 8</li>
+                    </ul>
+                </li>
+            </ol>
+            
+        </section>
+        <section>
+            <h2>Tables</h2>
+            <table border>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone Primary</th>
+                        <th>Phone Secondary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Rehan</td>
+                        <td>rehan@indixpert.com</td>
+                        <td >9999999999</td>
+                        <td>8888888888</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Shoaib</td>
+                        <td>shoaib@indixpert.com</td>
+                        <td colspan="2" rowspan="3">9999999999</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Sahil</td>
+                        <td>sahil@indixpert.com</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>Shrawan</td>
+                        <td>shrawan@indixpert.com</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">This is a demo of a table footer</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <h2>Images</h2>
+            <img width="300" src="./images/generated_image_d6138196696e431883405263e5551088.webp" alt="a men in white shirt and shorts, seating on a square block" />
+            <img height="100px" src="https://www.indixpert.com/images/logo/indixpert-logo.svg" alt="Blue orange logo of Indixpert" />
+            
+            <h3>Using different Image based on device width (Picture Tag)</h3>
+            <picture>
+                <source media="(max-width: 600px)" srcset="./images/shopping.webp">
+                <source media="(max-width: 1024px)" srcset="./images/generated_image_d6138196696e431883405263e5551088.webp">
+                <img width="400px" src="./images/ksKX8fXZ_cd6a13664f6f4eed88502c5a073a7047.jpg" alt="">
+            </picture>
+        </section>
+    </main>
+</body>
+</html>

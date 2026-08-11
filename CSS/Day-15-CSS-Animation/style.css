@@ -1,0 +1,80 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    padding-bottom: 3rem;
+}
+
+a{
+    color: blue;
+}
+.transition{
+    /* transition:  color .6s 1s ease-out */
+    transition-duration: .6s;
+    transition-property: all;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+}
+a:hover{
+    color: white;
+    background: red;
+}
+
+.container{
+    --width: 400px;
+    --height: 300px;
+    width: var(--width);
+    height: var(--height);
+    border: 2px solid red;
+    --container-padding: 20px;
+    padding: var(--container-padding);
+    position: relative;
+}
+.box{
+    --box-size: 80px;
+    width: var(--box-size);
+    height: var(--box-size);
+    position: absolute;
+    left: var(--container-padding);
+    background-color: gray;
+    border-radius: 10px;
+    animation-name: changeShape;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+}
+
+@keyframes changeShape{
+    0%{
+        background-color: gray;
+        border-radius: 10px;
+        top: var(--container-padding);
+        left: var(--container-padding);
+    }
+    25%{
+        background-color: red;
+        border-radius: 10px;
+        top: var(--container-padding);
+        left: calc(var(--width) - (var(--box-size) + var(--container-padding)));
+    }
+    50%{
+        background-color: red;
+        border-radius: calc(var(--box-size) / 2);
+        top: calc(var(--height) - (var(--box-size) + var(--container-padding)));
+        left: calc(var(--width) - (var(--box-size) + var(--container-padding)));
+    }
+    75%{
+        background-color: red;
+        border-radius: 10px;
+        top: calc(var(--height) - (var(--box-size) + var(--container-padding)));
+        left:  var(--container-padding);
+    }
+    100%{
+        background-color: gray;
+        border-radius: 10px;
+        top: var(--container-padding);
+        left: var(--container-padding);
+    }
+}

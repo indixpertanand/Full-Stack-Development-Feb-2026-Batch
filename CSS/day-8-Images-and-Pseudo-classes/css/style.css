@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* text-align: right */
+    padding: 3rem;
+}
+.image-1, .image-3{
+    width: 300px;
+    border: 2px solid red;
+    padding: 10px;
+    margin-left: auto;
+}
+.img-responsive{
+    max-width: 100%;
+    height: auto
+}
+
+.image-3 img{
+    max-width: 100%;
+    height: 300px;
+    width: 300px;
+}
+.image-3 .img-fill{
+    object-fit: fill;
+}
+.image-3 .img-contain{
+    object-fit: contain;
+}
+.image-3 .img-cover{
+    object-fit: cover;
+}
+
+.img-thumbnail{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid gray;
+    padding: .25rem;
+    border-radius: .5rem;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    margin-top: 20px;
+}
+
+.rounded{
+    border-radius: .5rem ;
+}
+
+.rounded-top-left{
+    border-top-left-radius: .5rem;
+}
+.rounded-top-right{
+    border-top-right-radius: .5rem;
+}
+.rounded-bottom-right{
+    border-bottom-right-radius: .5rem;
+}
+.rounded-bottom-left{
+    border-bottom-left-radius: .5rem;
+}
+
+.rounded-custom{
+    border-radius: 0rem .5rem 0rem .5rem  ;
+}
+
+.rounded-pill{
+    border-radius: 50rem;
+}
+.rounded-circle{
+    border-radius: 50%;
+}
+
+button:focus{
+    border-color: red;
+    outline: none;
+}
+
+button:hover{
+    border-color: red;
+    background-color: red;
+    color: white;
+}
+
+button:disabled{
+    border-color: rgb(252, 180, 180);
+    background-color: rgb(252, 180, 180);
+    color: lightgray;
+}
+
+
+input:required{
+    border-color: orange;
+}
+input:invalid{
+    border-color: red;
+}
+input:optional{
+    border-color: green;
+}

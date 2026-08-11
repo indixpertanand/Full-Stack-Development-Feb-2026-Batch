@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding-bottom: 3rem;
+}
+
+.inline{
+    display: inline;
+    padding-block: 10px; 
+}
+
+.block{
+    display: block
+}
+
+.inline-block{
+    display: inline-block;
+    padding-block: 10px; 
+}
+
+.hidden{
+    /* visibility: hidden; */
+    display: none;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #c0c0c0;
+    margin-bottom: 30px;
+    border-radius: .5rem;
+}
+
+.shadow{
+    box-shadow: 20px 20px 20px rgba(0,0,0,.25);
+}
+.shadow-multi{
+    box-shadow: 4px 4px 10px rgba(197, 92, 92, 0.4), 20px 20px 20px rgba(0,0,0,.25);
+}
+.shadow-sm{
+    box-shadow: inset -10px -10px 10px rgba(0,0,0,.15);
+    
+}
+
+.dice-side{
+    position: relative;
+}
+
+.dice-side::before{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    box-shadow: 0 70px black, 0 -70px ;
+}
+
+.outline-red{
+    border-color: green;
+    /* outline: 2px solid red */
+    outline-width: 2px;
+    outline-style: dashed;
+    outline-color: red;
+    outline-offset: 10px;
+}
