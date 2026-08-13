@@ -45,6 +45,7 @@
     --btn-padding-lg-x: 1.25rem;
     --btn-padding-y: .875rem;
     --btn-padding-sm-y: .875rem;
+    --btn-font-size: .875rem;
     --btn-padding-lg-y: .75rem;
 
     --container-sm: 540px;
@@ -53,6 +54,7 @@
     --container-xl: 1140px;
     --container-xxl: 1314px;
     --container-xxxl: 1630px;
+    --container-padding: 12px;
 
     /* Nav links */
     --nav-link-color: var(--dark-800);
@@ -84,6 +86,7 @@ body{
         --btn-padding-y: 1.125rem;
         --btn-padding-sm-y: .875rem;
         --btn-padding-lg-y: .875rem;
+        --container-padding: 17px;
     }
     body{
         font-size: 1rem;
@@ -100,6 +103,7 @@ body{
         --btn-padding-y: 1.125rem;
         --btn-padding-sm-y: .875rem;
         --btn-padding-lg-y: .875rem;
+        --btn-font-size: 1.125rem;
     }
 }
 a{
@@ -144,7 +148,30 @@ a{
 }
 
 
+.text-center{
+    text-align: center;
+}
 
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--dark-800);
+}
+
+.lead{
+    font-size: .875rem;
+}
+
+@media (min-width: 992px){
+    .lead{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1700px){
+    .lead{
+        font-size: 1.125rem;
+    }
+}
 
 /* Containers  */
 
@@ -152,7 +179,7 @@ a{
     width: 100%;
     max-width: 100%;
     margin-inline: auto;
-    padding-inline: 17px;
+    padding-inline: var(--container-padding);
 }
 
 @media (min-width: 576px){
@@ -199,7 +226,6 @@ a{
     --btn-bg: transparent;
     --btn-hover-color: var(--dark-800);
     --btn-hover-bg: var(--border-color);
-    --btn-font-size: 1.125rem;
     color: var(--btn-color);
     background: var(--btn-bg);
     border: var(--btn-border-width) var(--btn-border-style) var(--btn-border-color);
@@ -208,6 +234,8 @@ a{
     font-size: var(--btn-font-size);
     transition: var(--transition-base);
     cursor: pointer;
+    display: inline-block;
+    text-align: center;
 }
 .btn:hover{
     --btn-border-color: var(--btn-border-hover-color);
@@ -285,6 +313,10 @@ a{
     }
 }
 
+/* Position */
+.relative{
+    position: relative;
+}
 
 /* List  */
 
@@ -293,11 +325,18 @@ a{
     padding-left: 0
 }
 
-.img{
+img{
     display: block;
     max-width: 100%;
     height: auto;
 }
+
+/* border */
+
+.border{
+    border: 1px solid var(--border-color)
+}
+
 
 
 /* Nav Links */
@@ -350,5 +389,37 @@ nav{
     }
     .menubar:not(.show){
         display: flex;
+    }
+}
+
+.section-heading{
+    margin-bottom: 2.5rem;
+    gap: 2rem;
+    align-items: flex-start;
+}
+.section-heading :where(.btn, .btn-group){
+    flex-shrink: 0;
+}
+.section-heading .heading-left{
+    max-width: max(800px, 70%);
+}
+
+.section-title{
+    font-size: 1.75rem;
+}
+
+@media (min-width: 992px){
+    .section-heading{
+        align-items: flex-end;
+    }
+}
+@media (min-width: 1200px){
+    
+    .section-heading{
+        margin-bottom: 3.75rem;
+    }
+    
+    .section-title{
+        font-size: 2.375rem;
     }
 }

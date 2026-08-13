@@ -1,58 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EdTech - E-Learning Educational Website</title>
-        <meta name="description" content="This is a e learning platform">
-        <meta name="keywords" content="Edtech, E-Learning, Educational Website, UI/UX Design, Web Design Fundamentals">
-        <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-        <meta property="og:title" content="EdTech - E-Learning Educational Website" />
-        <meta property="og:description" content="This is a e learning platform" />
-        <meta property="og:image" content="" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./assets/css/theme.css">
-        <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
-    <body>
-        <header>
-            <div class="header-top bg-primary ">
-                <div class="container flex align-center justify-center" >
-                    <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
-                    <a href="#" class="block" aria-label="Click here to avail Free Courses"><img src="./assets/icons/arrow-right-icon-white.svg" alt=""></a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdTech - E-Learning Educational Website</title>
+    <meta name="description" content="This is a e learning platform">
+    <meta name="keywords" content="Edtech, E-Learning, Educational Website, UI/UX Design, Web Design Fundamentals">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="EdTech - E-Learning Educational Website" />
+    <meta property="og:description" content="This is a e learning platform" />
+    <meta property="og:image" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="header-top bg-primary ">
+            <div class="container flex align-center justify-center">
+                <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
+                <a href="#" class="block" aria-label="Click here to avail Free Courses"><img
+                        src="./assets/icons/arrow-right-icon-white.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="flex align-center justify-between">
+                    <a href="index.html" aria-label="Click here to visit our home page"><img
+                            src="./assets/images/edtech-logo.svg" alt="edtech-logo"></a>
+                    <ul class="menubar list-unstyled flex flex-column flex-lg-row">
+                        <li><a class="nav-link" href="./index.html">Home</a></li>
+                        <li><a class="nav-link highlight" href="#">Courses</a></li>
+                        <li><a class="nav-link" href="#">About</a></li>
+                        <li><a class="nav-link" href="#">Pricing</a></li>
+                        <li><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                    <div class="top-buttons flex align-center">
+                        <a href="#" class="btn btn-white btn-lg">Sign up</a>
+                        <a href="#" class="btn btn-primary btn-lg">Login</a>
+                    </div>
+                    <button type="button" class="menubar-toggler">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="top-banner">
+            <div class="container text-center">
+                <div class="banner-heading flex align-center border bg-white">
+                    <img src="./assets/icons/abstract-line.svg" class="decorator" alt="">
+                    <div class="icon">
+                        <img src="./assets/icons/lightining-bolt-icon.svg" alt="lightining-bolt-icon">
+                    </div>
+                    <h1><span class="text-primary">Unlock</span> Your Creative Potential</h1>                    
+                </div>
+                <h2>with Online Design and Development Courses.</h2>
+                <p class="lead">Learn from Industry Experts and Enhance Your Skills.</p>
+                <div class="btns flex justify-center">
+                    <a href="#" class="btn btn-primary">Explore Courses</a>
+                    <a href="#" class="btn btn-white">View Pricing</a>
                 </div>
             </div>
-            <div class="header-bottom">
-                <div class="container">
-                    <nav class="flex align-center justify-between">
-                        <a href="index.html" aria-label="Click here to visit our home page"><img src="./assets/images/edtech-logo.svg" alt="edtech-logo"></a>
-                        <ul class="menubar list-unstyled flex flex-column flex-lg-row">
-                            <li><a class="nav-link" href="./index.html">Home</a></li>
-                            <li><a class="nav-link highlight" href="#">Courses</a></li>
-                            <li><a class="nav-link" href="#">About</a></li>
-                            <li><a class="nav-link" href="#">Pricing</a></li>
-                            <li><a class="nav-link" href="#">Contact</a></li>
-                        </ul>
-                        <div class="top-buttons flex align-center">
-                            <a href="#" class="btn btn-white btn-lg">Sign up</a>
-                            <a href="#" class="btn btn-primary btn-lg">Login</a>
+        </section>
+        <section class="promoters">
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center">
+                            <img src="./assets/images/zapier.svg" alt="zapier logo" />
                         </div>
-                        <button type="button" class="menubar-toggler">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </nav>
-                </div>                
+                        <div class="swiper-slide text-center">
+                            <img src="./assets/images/spotify.svg" alt="spotify logo" />
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <img src="./assets/images/zoom.svg" alt="zoom logo" />
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <img src="./assets/images/amazon.svg" alt="amazon logo" />
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <img src="./assets/images/adobe.svg" alt="adobe logo" />
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <img src="./assets/images/notion.svg" alt="notion logo" />
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <img src="./assets/images/netflix.svg" alt="netflix logo" />
+                        </div>
+                    </div>
+                </div>
             </div>
-        </header>
-        <main>
+        </section>
+        <section class="video-banner">
+            <div class="container ">
+                <div class="video-wrapper relative">
+                    
+                    <img src="./assets/images/video-banner.webp" alt="video banner">
+                    <button class="btn" aria-label="Click here to Play video">
+                        <img src="./assets/icons/play-icon.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="container">
+                <div class="section-heading flex flex-column flex-lg-row justify-between">
+                    <div class="heading-left">
+                        <h2 class="section-title">Benefits</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                    </div>
+                    <a href="#" class="btn btn-white">View All</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container ">
+            <div class="footer-top flex flex-column justify-between flex-lg-row">
+                <div class="left-panel">
+                    <a href="index.html" aria-label="Click here to go on home page"><img
+                            src="./assets/images/edtech-logo.svg" alt="edtech-logo"></a>
+                    <ul class="list-unstyled flex flex-column">
+                        <li class="flex align-center">
+                            <img src="./assets/icons/envelope-icon.svg" alt="Email">
+                            <a href="mailto: hello@skillbridge.com">hello@skillbridge.com</a>
+                        </li>
+                        <li class="flex align-center">
+                            <img src="./assets/icons/phone-icon.svg" alt="phone">
+                            <a href="tel: 91 91813 232309">+91 91813 232309</a>
+                        </li>
+                        <li class="flex align-center">
+                            <img src="./assets/icons/map-pin-icon.svg" alt="Address">
+                            <span>Somewhere in the World</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-panel flex flex-column flex-md-row">
+                    <div class="column">
+                        <strong>Home</strong>
+                        <nav class="flex flex-column">
+                            <a href="#">Benefits</a>
+                            <a href="#">Our Courses</a>
+                            <a href="#">Our Testimonials</a>
+                            <a href="#">Our FAQ</a>
+                        </nav>
+                    </div>
+                    <div class="column">
+                        <strong>About Us</strong>
+                        <nav class="flex flex-column">
+                            <a href="#">Company</a>
+                            <a href="#">Achievements</a>
+                            <a href="#">Our Goals</a>
+                        </nav>
+                    </div>
+                    <div class="column">
+                        <strong>Social Profiles</strong>
+                        <div class="social-share flex align-center">
+                            <a href="#">
 
-        </main>
-        <footer>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_29_867)">
+                                        <path
+                                            d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4687H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92187 17.3438 4.92187V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4687H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                                             />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_29_867">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.55016 21.7497C16.6045 21.7497 21.5583 14.2465 21.5583 7.74162C21.5583 7.53068 21.5536 7.31505 21.5442 7.10412C22.5079 6.40722 23.3395 5.54401 24 4.55505C23.1025 4.95436 22.1496 5.21514 21.1739 5.32849C22.2013 4.71266 22.9705 3.74523 23.3391 2.60552C22.3726 3.17831 21.3156 3.58237 20.2134 3.80037C19.4708 3.01132 18.489 2.48887 17.4197 2.31381C16.3504 2.13874 15.2532 2.32081 14.2977 2.83185C13.3423 3.3429 12.5818 4.15446 12.1338 5.14107C11.6859 6.12767 11.5754 7.23437 11.8195 8.29005C9.86249 8.19185 7.94794 7.68346 6.19998 6.79785C4.45203 5.91225 2.90969 4.66919 1.67297 3.14927C1.0444 4.233 0.852057 5.5154 1.13503 6.73585C1.418 7.95629 2.15506 9.0232 3.19641 9.71974C2.41463 9.69492 1.64998 9.48444 0.965625 9.10568V9.16662C0.964925 10.3039 1.3581 11.4063 2.07831 12.2865C2.79852 13.1667 3.80132 13.7703 4.91625 13.9947C4.19206 14.1929 3.43198 14.2218 2.69484 14.0791C3.00945 15.0572 3.62157 15.9126 4.44577 16.5261C5.26997 17.1395 6.26512 17.4804 7.29234 17.501C5.54842 18.8709 3.39417 19.6139 1.17656 19.6104C0.783287 19.6098 0.390399 19.5857 0 19.5382C2.25286 20.9835 4.87353 21.7511 7.55016 21.7497Z" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_29_873)">
+                                        <path
+                                            d="M22.2234 0H1.77187C0.792187 0 0 0.773438 0 1.72969V22.2656C0 23.2219 0.792187 24 1.77187 24H22.2234C23.2031 24 24 23.2219 24 22.2703V1.72969C24 0.773438 23.2031 0 22.2234 0ZM7.12031 20.4516H3.55781V8.99531H7.12031V20.4516ZM5.33906 7.43438C4.19531 7.43438 3.27188 6.51094 3.27188 5.37187C3.27188 4.23281 4.19531 3.30937 5.33906 3.30937C6.47813 3.30937 7.40156 4.23281 7.40156 5.37187C7.40156 6.50625 6.47813 7.43438 5.33906 7.43438ZM20.4516 20.4516H16.8937V14.8828C16.8937 13.5562 16.8703 11.8453 15.0422 11.8453C13.1906 11.8453 12.9094 13.2937 12.9094 14.7891V20.4516H9.35625V8.99531H12.7687V10.5609H12.8156C13.2891 9.66094 14.4516 8.70938 16.1813 8.70938C19.7859 8.70938 20.4516 11.0813 20.4516 14.1656V20.4516Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_29_873">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                © 2023 eDTech. All rights reserved.
+            </div>
+        </div>
+    </footer>
 
-        </footer>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        watchSlidesProgress: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 0,
+          },
+          1024: {
+            slidesPerView: 7,
+            spaceBetween: 0,
+          },
+        },
+      });
+    </script>
+</body>
+
 </html>
