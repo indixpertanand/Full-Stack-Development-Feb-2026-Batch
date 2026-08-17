@@ -270,7 +270,7 @@ footer a:hover{
 .promoters{
     padding-bottom: 1.875rem;
 }
-.promoters .container{
+.promoters .parteners-wrapper{
     padding: .625rem;
     background: var(--white);
     border-radius: var(--border-radius-md);
@@ -287,7 +287,7 @@ footer a:hover{
 }
 
 @media (min-width: 1200px){
-    .promoters .container{
+    .promoters .parteners-wrapper{
         padding: 1.5rem
     }
     .promoters{
@@ -295,7 +295,7 @@ footer a:hover{
     }
 }
 @media (min-width: 1700px){
-    .promoters .container{
+    .promoters .parteners-wrapper{
         padding: 1.875rem;
         border-radius: var(--border-radius-lg);
     }
@@ -343,5 +343,140 @@ footer a:hover{
     .video-banner  button{
         --size: 4.5rem;
         padding: .875rem
+    }
+}
+
+
+/* Benefits */
+.benefits{
+    padding-block: 3.125rem;
+}
+
+.benefit-card{
+    gap: 1.875rem;
+    align-items: end;
+    padding: 1.875rem
+}
+.benefit-card .count{
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: var(--dark-800);
+}
+.benefit-card h3{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark-700);
+    margin-bottom: .625rem;
+    letter-spacing: -0.6%;
+}
+.benefit-card .btn{
+    --size: 3.375rem;
+    width: var(--size);
+    height: var(--size);
+    padding: 0;
+    display: grid;
+    place-items: center;
+    --btn-bg: var(--body-bg);
+    --btn-color: var(--primary);
+}
+.benefit-card .btn:hover{    
+    --btn-bg: var(--primary);
+    --btn-color: var(--white);
+    --btn-border-color: var(--primary);
+}
+.benefit-card p{
+    margin-bottom: 0;
+}
+.benefit-card .card-footer{
+    margin-top: auto
+}
+
+@media (min-width: 992px) {
+    .benefits{
+        padding-block: 3.75rem 4.375rem;
+    }
+    .benefit-card{
+        gap: 2.5rem
+    }
+}
+@media (min-width: 1200px) {
+    .benefit-card{
+        gap: 2.5rem;
+        padding: 2.5rem
+    }
+}
+@media (min-width: 1700px) {
+    .benefits{
+        padding-block: 7.24rem 10.375rem;
+    }
+}
+
+.courses{
+    padding-bottom: 3.125rem;
+}
+
+.course-card{
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+.course-card h3{
+    margin-block: 1.5rem .625rem;
+}
+.course-card span{
+    padding: .5rem .875rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+}
+
+.course-card .card-content .flex{
+    gap: .625rem;
+    flex-wrap: wrap;
+};
+.course-card cite{
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--dark-800);
+}
+
+@media (min-width: 992px){    
+    .course-card{
+        padding: 1.875rem;
+    }
+    .course-card span{
+        font-size: .875rem;
+    }
+    .course-card cite{
+        margin-left: auto
+    }
+}
+@media (min-width: 1200px){    
+    .course-card{
+        padding: 2.5rem;
+    }
+    .courses{
+        padding-bottom: 7.5rem;
+    }
+}
+@media (min-width: 1700px){
+    .courses{
+        padding-bottom: 9rem;
+    }    
+    .course-card{
+        padding: 3.125rem;
+        gap: 1.875rem
+    }
+    .course-card span{        
+        padding: .625rem 1rem;
+        border-radius: var(--border-radius-md);
+    }
+    .course-card :is(span,  p){
+        font-size: 1.125rem;
+    }
+    .course-card h3{
+        margin-block: 1.875rem .875rem;
+    }
+    .course-card cite{
+        font-size: 1.25rem;
     }
 }
