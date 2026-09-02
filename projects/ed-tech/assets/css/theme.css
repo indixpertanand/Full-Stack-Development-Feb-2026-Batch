@@ -410,6 +410,7 @@ nav{
 
 .section-title{
     font-size: 1.75rem;
+    margin-bottom: .625rem;
 }
 
 @media (min-width: 992px){
@@ -431,6 +432,9 @@ nav{
     
     .section-heading .heading-left{
         max-width: max(700px,60%);
+    }
+    .section-title{
+        font-size: 3rem;
     }
 }
 
@@ -462,9 +466,49 @@ nav{
     background: var(--white);
     border-radius: var(--border-radius);
 }
+.card-image{ width: 100%;}
 
 @media (min-width: 1700px){
    .card{
         border-radius: var(--border-radius-lg);
     } 
 }
+
+.list-icon li{
+    --icon-size: 1.5rem;
+    display: flex;
+    gap: .5rem;
+    padding: .75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    font-size: .875rem;
+}
+.list-icon li::before{
+    content: '';
+    width: var(--icon-size);
+    flex-shrink: 0;
+    height: var(--icon-size);
+    background: var(--primary-100) url('../icons/check-icon.svg') no-repeat center/1rem;
+    border-radius: var(--border-radius-sm);
+}
+.list-icon li.list-cross::before{
+    background-image: url('../icons/cross-icon.svg');
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+}
+
+
+@media (min-width: 1700px){
+    
+    .list-icon li{
+        --icon-size: 2rem;
+        gap: .75rem;        
+        font-size: 1.125rem;
+    }
+}
+
+.visually-hidden{
+    display: none;
+}
+
+

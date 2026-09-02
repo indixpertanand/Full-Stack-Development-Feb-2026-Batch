@@ -158,7 +158,7 @@ footer a:hover{
     .footer-top .left-panel ul{
         gap: .875rem;
     }
-    .right-panel{
+    .footer-top .right-panel{
         width: 60%;
     }
     
@@ -174,7 +174,7 @@ footer a:hover{
         margin-top: 2.5rem;
         gap: 1.25rem
     }
-    .right-panel{
+    .footer-top .right-panel{
         width: 55%;
     }
     .footer-bottom{
@@ -419,8 +419,10 @@ footer a:hover{
     padding: 1.5rem;
     gap: 1.5rem;
 }
+
 .course-card h3{
     margin-block: 1.5rem .625rem;
+    font-size: 1.125rem;
 }
 .course-card span{
     padding: .5rem .875rem;
@@ -456,6 +458,9 @@ footer a:hover{
     }
     .courses{
         padding-bottom: 7.5rem;
+    }    
+    .course-card h3{
+        font-size: 1.25rem;
     }
 }
 @media (min-width: 1700px){
@@ -478,5 +483,365 @@ footer a:hover{
     }
     .course-card cite{
         font-size: 1.25rem;
+    }
+     
+    .course-card h3{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* Testimonials */
+
+.testimonials{
+    padding-bottom: 3.125rem;
+}
+.testimonials-card .card-content{
+    padding: 1.875rem
+}
+.testimonials-card .card-footer{
+    padding: 1.25rem 1.875rem;
+    background-color: var(--dark-100);
+}
+
+.testimonials-card .card-footer .flex{
+    flex-grow: 1;
+    gap: .625rem
+}
+.testimonials-card cite{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-700);
+    font-style: normal;
+}
+.testimonials-card .btn{
+    font-weight: 500;
+}
+
+@media (min-width: 1200px){
+    .testimonials-card .card-content{
+        padding: 2.5rem
+    }
+    .testimonials-card .card-footer{
+        padding: 1.5rem 2.5rem
+    }
+    .testimonials{
+        padding-bottom: 6.25rem;
+    }
+}
+@media (min-width: 1700px){
+    .testimonials-card .card-content{
+        padding: 3.125rem
+    }
+    .testimonials-card .card-footer{
+        padding: 1.875rem 3.125rem
+    }
+    .testimonials-card .card-footer .flex{
+        gap: 1rem
+    }
+    .testimonials-card cite{
+        font-size: 1.125rem;
+    }
+    .testimonials .grid-container{
+        --gap: 1.875rem;
+    }
+    .testimonials{
+        padding-bottom: 9rem;
+    }
+}
+
+/* Pricing Section */
+.pricing .btn-group{
+    padding: .75rem;
+    border-radius: var(--border-radius-md);
+}
+.pricing .btn-group .btn{
+    border-width: 0;
+
+}
+.pricing .btn-group .btn.active{
+    --btn-color: var(--white);
+    --btn-bg: var(--primary);
+}
+
+.plan-wrapper{
+    padding: 1.25rem;
+    border-radius: var(--border-radius-lg);
+}
+.pricing-card{
+    background: var(--dark-100);
+    padding: 1.875rem 1.25rem 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    gap: 1.875rem;
+}
+.plan-name{
+    padding: .5rem 1rem;
+    font-size: 1rem;
+}
+.pricing-card .amount{
+    font-size: 3.125rem;
+    font-weight: 600;
+    line-height: .73;
+    color: var(--dark-800);
+}
+.plan-content .features{
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg)  var(--border-radius-lg) 0 0;
+}
+.plan-content .features h4{
+    margin-bottom: 1.25rem;
+}
+.plan-content .features ul{
+    gap: 1.25rem;
+    text-align: left;
+}
+.plan-content .btn{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+@media (min-width: 992px){
+    .plan-wrapper{
+        padding: 2rem
+    }
+}
+@media (min-width: 1200px){
+    .plan-wrapper{
+        padding: 3.125rem
+    }
+    .pricing-card{
+        padding: 2.5rem 1.5rem 1.5rem;
+        gap: 3.125rem;
+    }
+    .plan-name{
+        padding: .625rem 1rem;
+        font-size: 1.125rem;
+    }
+    .pricing-card .amount{
+        font-size: 3.75rem;
+    }
+    .plan-content .features{
+        padding: 1.875rem 2.75rem;
+    }
+    .plan-content .features h4{
+        margin-bottom: 1.5rem;
+    }
+}
+@media (min-width: 1700px){
+    .plan-wrapper{
+        padding: 5rem
+    }
+    .pricing-card{
+        padding: 3.125rem 1.875rem 1.875rem;
+    }
+    .plan-name{
+        padding: .75rem 1rem;
+        font-size: 1.375rem;
+    }
+    
+    .plan-price{
+        font-size: 1.25rem;
+    }
+    .pricing-card .amount{
+        font-size: 5rem;
+    }
+    .plan-content .features{
+        padding: 2.5rem 4.375rem;
+    }
+    .plan-content .features h4{
+        margin-bottom: 1.875rem;
+    }
+}
+
+/* ===========Faqs===================== */
+.faqs{
+    padding-block: 3.125rem
+}
+.faq-wrapper{
+    padding: 1.5rem;
+    border-radius: var(--border-radius-lg);
+}
+.faq-wrapper h2{
+    line-height: 1.2;
+}
+.faqs .section-heading{
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+.faqs .left-panel a{
+    color: inherit;
+}
+.faqs .left-panel a:hover{
+    color: var(--primary)
+}
+
+
+
+.faq{
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+.faq:not(:last-child){
+    margin-bottom: 1.25rem;
+}
+.faq-heading{
+    padding: 1.25rem;
+    display: flex;
+    gap: 1.875rem; 
+    justify-content: space-between;   
+}
+.faq-heading h3{
+    font-size: 1rem;
+}
+.faq-content{
+    padding-block: 1.25rem;
+    margin-inline: 1.25rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+.faq-content a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:  1.25rem;
+}
+
+.faq :is(.faq-button, .icon){
+    display: grid;
+    place-items: center;
+    background-color: var(--white);
+    border-radius: 50%;
+    width: var(--icon-size, 2.5rem);
+    height: var(--icon-size, 2.5rem);
+    flex-shrink: 0;
+}
+.faq .icon{
+    --icon-size: 2.5rem
+}   
+.faq a:hover .icon{
+    color: var(--dark-800);
+}
+.faq .faq-button{
+    --icon-size: 2.75rem;
+    background-color: var(--primary-200);
+    border-radius: var(--border-radius-sm);
+    background-image: url('./../icons/cross-icon.svg');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.faq .faq-button:not(.active){
+    background-image: url('./../icons/plus-icon.svg')
+}
+
+.faq-body{
+    transition: 1s all;    
+}
+.faq-body:not(.show){
+    display: none;
+
+}
+
+@media (min-width: 992px){
+    .faq-wrapper{
+        padding: 3.75rem;        
+        gap: 3.75rem
+    }
+    .faq-wrapper .left-panel{
+        width: 240px;
+        flex-shrink: 0;
+    }
+    .faqs{
+        padding-block: 5rem
+    }
+    .faq-heading{
+        padding: 1.875rem
+    }
+    .faq-content{
+         padding-block: 1.875rem;
+        margin-inline: 1.875rem;
+    }
+    .faq-content a{
+        margin-top: 1.875rem
+    }
+}
+
+@media (min-width:1200px){
+    .faq-wrapper .left-panel{
+        width: 330px;
+    }
+}
+@media (min-width: 1400px){
+    .faq-wrapper{
+        padding: 5rem;            
+        gap: 5rem
+    }
+    .faqs .section-heading{
+        gap: 2.5rem
+    }
+    .faqs{
+        padding-block: 10rem
+    }
+    .faq:not(:last-child){
+        margin-bottom: 1.875rem;
+    }
+    .faq-heading{
+        padding: 2.5rem
+    }
+    .faq-heading h3{
+        font-size: 1.125rem;
+    }
+    .faq-content{
+         padding-block: 2.5rem;
+        margin-inline: 2.5rem;
+    }
+    .faq-content a{
+        margin-top: 2.5rem
+    }
+    .faq .icon{
+        --icon-size: 2.75rem;
+    }
+    .faq .faq-button{
+        --icon-size: 2.75rem;
+    }
+}
+@media (min-width: 1700px){
+    .faq-wrapper .left-panel{
+        width: 408px;
+    }
+    .faq-wrapper{
+        padding: 6.25rem;
+        gap: 7.5rem
+    }
+    .faqs .section-heading{
+        gap: 3.125rem
+    }
+    .faqs{
+        padding-block: 16rem 
+    }
+    .faq{
+        border-radius: var(--border-radius-lg);
+    }
+    .faq-heading{
+        padding: 2.875rem 3.125rem
+    }
+    .faq-heading h3{
+        font-size: 1.25rem;
+    }
+    .faq-content{
+        padding-block: 3.125rem;
+        margin-inline: 3.125rem
+    }
+    .faq-content a{
+        margin-top: 3.125rem
+    }
+    .faq .icon{
+        --icon-size: 3.5rem;
+    }
+    .faq .faq-button{
+        --icon-size: 3.25rem;
     }
 }
