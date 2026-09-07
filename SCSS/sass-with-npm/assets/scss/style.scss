@@ -1,3 +1,5 @@
+@use 'variables';
+@use 'mixins';
 *{
     box-sizing: border-box;
     margin: 0;
@@ -15,4 +17,61 @@ h1{
 }
 h2{
     font-size: 2.5rem;
+}
+
+a:hover{
+    color: variables.$primary;
+}
+
+.container{
+    max-width: min(88%, 1800px);
+    margin-inline: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        list-style: none;
+        margin-bottom: 0;
+        gap: 10px
+    }
+    li a{
+        display: block;
+        padding: .5rem 1rem;
+        color: inherit;
+        &:hover{
+            color: variables.$danger
+        }
+    }
+}
+
+%btn-template{    
+    color: inherit;
+    font-size: 1rem;
+}
+
+.btn{
+    @extend %btn-template
+}
+
+.btn-primary{
+    @include mixins.button(variables.$primary)
+}
+.btn-danger{
+    @include mixins.button(variables.$danger)
+}
+.btn-success{
+    @include mixins.button(variables.$success)
+}
+
+.btn-link{
+    @extend %btn-template;
+}
+
+@each $size in variables.$icon_sizes{
+    .icon-#{$size}{
+        @include mixins.icon($size)
+    }
 }

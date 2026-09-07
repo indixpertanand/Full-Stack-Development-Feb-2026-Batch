@@ -1,0 +1,10 @@
+@mixin button($varient:red){
+    border-color: $varient;
+    background-color: $varient;
+    color: white;
+}
+
+@mixin icon($size){
+    width: $size;
+    height: $size;
+}

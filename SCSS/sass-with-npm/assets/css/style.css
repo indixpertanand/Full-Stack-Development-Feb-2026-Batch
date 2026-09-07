@@ -1,1 +1,87 @@
-*{box-sizing:border-box;margin:0;padding:0}body{scroll-behavior:smooth;font-size:1rem;font-family:sans-serif}h1{font-size:3rem}h2{font-size:2.5rem}/*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+a:hover {
+  color: blue;
+}
+
+.container {
+  max-width: min(88%, 1800px);
+  margin-inline: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  gap: 10px;
+}
+nav li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: inherit;
+}
+nav li a:hover {
+  color: red;
+}
+
+.btn-link, .btn {
+  color: inherit;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  border-color: blue;
+  background-color: blue;
+  color: white;
+}
+
+.btn-danger {
+  border-color: red;
+  background-color: red;
+  color: white;
+}
+
+.btn-success {
+  border-color: green;
+  background-color: green;
+  color: white;
+}
+
+.icon-32px {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-42px {
+  width: 42px;
+  height: 42px;
+}
+
+.icon-54px {
+  width: 54px;
+  height: 54px;
+}
+
+/*# sourceMappingURL=style.css.map */
