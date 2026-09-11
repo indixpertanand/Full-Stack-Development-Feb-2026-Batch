@@ -13,6 +13,212 @@
     <button class="btn btn-secondary">Submit</button>
     <button class="btn btn-danger" disabled>Submit</button>
 
+    <div class="tablet-only">Show on Tablet Only</div>
+
+    <div class="container my-4 py-4 bg-primary text-white">.container</div>
+    <div class="container-fluid my-4 py-4 bg-primary text-white">.container-fluid</div>
     
-</body>
+    <!-- Grid System -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">Column 1</div>
+            <div class="col">Column 2</div>
+            <div class="col">Column 3</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">Column 1</div>
+            <div class="col">Column 2</div>
+            <div class="col">Column 3</div>
+        </div>
+    </div>
+
+    <!-- Columns -->
+    <div class="container">
+        <h2>Equal Columns</h2>
+        <div class="row justify-content-end row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col">
+                <div class="div p-4 border">Column 1</div>
+            </div>
+            <div class="col">
+                <div class="div p-4 border">Column 2</div>
+            </div>
+            <div class="col">
+                <div class="div p-4 border">Column 3</div>
+            </div>
+            <div class="col">
+                <div class="div p-4 border">Column 4</div>
+            </div>
+        </div>
+    </div>
+    <div class="container pb-5">
+        <h2>Unequal Columns</h2>
+        <div class="row gx-3 gy-3">
+            <div class="col-lg-8">
+                <div class="div p-4 border">Image</div>
+            </div>
+            <div class="col-lg-4">
+                <div class="div p-4 border">Content</div>
+            </div>
+            <div class="col col-lg-8 order-lg-1">
+                <div class="div p-4 border">Image</div>
+            </div>
+            <div class="col-lg-4 ">
+                <div class="div p-4 border">Content</div>
+            </div>
+        </div>
+    </div>
+    <div class="container pb-5 pb-xxl-6">
+        <h2 class="mb-4">Utilities</h2>
+        <h3 class="mb-3">Margin & Padding</h3>
+        <div class="col-6 p-5 bg-primary ms-auto"></div>
+        <!--  -->
+        <h3 class="mb-2">Display</h3>
+        <div class="p-5 bg-primary d-inline-block">Inline block</div>
+        <div class="d-lg-flex mt-3 column-gap-2 justify-content-lg-center">
+            <div class="p-5 bg-primary">Flex item</div>
+            <div class="p-5 bg-primary">Flex item</div>
+            <div class="p-5 bg-primary">Flex item</div>
+            <div class="p-5 bg-primary">Flex item</div>
+        </div>
+        <div style="grid-template-columns: repeat(3, 1fr);" class="d-grid mt-3 column-gap-3 row-gap-3">
+            <div class="p-5 bg-primary">Grid item</div>
+            <div class="p-5 bg-primary">Grid item</div>
+            <div class="p-5 bg-primary">Grid item</div>
+            <div class="p-5 bg-primary">Grid item</div>
+        </div>
+        <div class="d-none mt-3 d-lg-block p-5 bg-secondary text-white">Desktop only</div>
+        <div class="d-lg-none mt-3 p-5 bg-secondary text-white">Mobile & Tab only</div>
+        
+        <h3 class="mt-4">Width & height</h3>
+        <div class="bg-primary vh-50 p-2">
+            <div class="p-4 bg-secondary text-white w-25">
+                .w-25
+            </div>
+            <div class="p-1 mt-2 bg-secondary text-white h-25">
+                .h-25
+            </div>
+        </div>
+        <h3 class="mt-4 mb-3">Background & Color</h3>
+        <h4 class="mb-3">Color</h4>
+        <p class="text-primary">text-primary.</p>
+        <p class="text-primary-emphasis">text-primary-emphasis</p>
+        <p class="text-secondary">text-secondary.</p>
+        <p class="text-secondary-emphasis">text-secondary-emphasis</p>
+        <p class="text-success">text-success.</p>
+        <p class="text-success-emphasis">text-success-emphasis</p>
+        <h4>Background</h4>
+        <div class="row  g-3">
+            <div class="col p-4 bg-primary">bg-primary</div>
+            <div class="col p-4 bg-primary-subtle">bg-primary-subtle</div>
+            <div class="col p-4 bg-secondary text-white">bg-secondary</div>
+            <div class="col p-4 bg-secondary-subtle">bg-secondary-subtle</div>
+            <div class="col p-4 bg-warning text-white">bg-warning</div>
+            <div class="col p-4 bg-warning-subtle">bg-warning-subtle</div>
+            <div class="col p-4 bg-danger text-white">bg-danger</div>
+            <div class="col p-4 bg-danger-subtle">bg-danger-subtle</div>
+        </div>
+
+        <h3 class="mt-4 mb-3">Position</h3>
+        <div class="position-relative vh-50 bg-primary-subtle border border-danger">
+            <div class="bg-black p-4 position-absolute top-0 start-0 translate-middle"></div>
+            <div class="bg-black p-4 position-absolute top-0 start-50 translate-middle"></div>
+            <div class="bg-black p-4 position-absolute top-0 start-100 translate-middle"></div>
+            <div class="bg-black p-4 position-absolute top-50 start-0 translate-middle"></div>
+            <div class="bg-black p-4 position-absolute top-50 start-50 translate-middle"></div>
+            <div class="bg-black p-4 position-absolute top-50 start-100 translate-middle"></div>
+            <div class="bg-black p-4 position-absolute top-100 start-0 translate-middle"></div>
+            <div class="bg-black p-4 position-absolute top-100 start-50 translate-middle"></div>
+            <div class="bg-black p-4 position-absolute top-100 start-100 translate-middle"></div>
+        </div>
+
+        <h2 class="mt-5">List</h2>
+        <!-- removing list style -->
+        <ul class="list-unstyled">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Autem debitis alias incidunt odio.</li>
+            <li>Eius neque iste ipsum repellat!</li>
+            <li>Mollitia eius velit repudiandae labore.</li>
+            <li>Expedita earum illo laboriosam placeat.</li>
+        </ul>
+        <!-- Inline List -->
+        <ul class="list-inline">
+            <li class="list-inline-item">Lorem ipsum dolor sit amet.</li>
+            <li class="list-inline-item">Autem debitis alias incidunt odio.</li>
+            <li class="list-inline-item">Eius neque iste ipsum repellat!</li>
+            <li class="list-inline-item">Mollitia eius velit repudiandae labore.</li>
+            <li class="list-inline-item">Expedita earum illo laboriosam placeat.</li>
+        </ul>
+        <h2 class="mt-5">Buttons</h2>
+        <!-- Button Varients -->
+        <button class="btn btn-primary">Primary Button </button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-warning">Warning</button>
+        <!-- Button Varients -->
+        <button class="btn btn-outline-primary">Primary Button </button>
+        <button class="btn btn-outline-secondary">Secondary</button>
+        <button class="btn btn-outline-success">Success</button>
+        <button class="btn btn-outline-warning">Warning</button>
+        <!-- btn sizes -->
+        <button class="btn btn-outline-success btn-sm">.btn-sm</button>
+        <button class="btn btn-outline-success">.btn</button>
+        <button class="btn btn-outline-success btn-lg">.btn-lg</button>
+        <h3 class="mt-4">Button Group</h3>
+        <div class="btn-group">
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-danger">Success</button>
+            <button class="btn btn-warning">Warning</button>
+        </div>
+
+        <h2 class="mt-4">Card</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+            <div class="col">
+                <div class="card">
+                    <div class="relative">
+                        <img src="./images/video-banner.webp" class="card-img-top" alt="">
+                        <span class="badge fw-normal text-bg-light position-absolute start-0 top-0">New</span>
+                        <span class="badge fw-normal text-bg-danger position-absolute end-0 top-0">New</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-subtitle small text-info">Suppliers Pitching</span>
+                        <h3 class="card-title h5">Exporters & Manufacturers</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, facere.</p>
+                        <a href="#" class="card-link">Click here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="mt-4">Border</h2>
+        <div class="row row-cols-2 gy-4 row-cols-sm-3 row-cols-lg-4">
+            <div class="col">
+                <div class=" border py-5"></div>
+            </div>
+            <div class="col">
+                 <div class=" border-top py-5"></div>
+            </div>
+            <div class="col">
+                 <div class=" border-end py-5"></div>
+            </div>
+            <div class="col">
+                 <div class=" border-bottom py-5"></div>
+            </div>
+            <div class="col">
+                 <div class=" border-start py-5"></div>
+            </div>
+            <div class="col">
+                 <div class=" border border-primary py-5"></div>
+            </div>
+            <div class="col">
+                 <div class=" border border-2 py-5"></div>
+            </div>
+            <div class="col">
+                 <div class=" border border-end-0 border-start-0  py-5"></div>
+            </div>
+        </div>
+    </div>
+    </body>
 </html>

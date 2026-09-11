@@ -1,0 +1,9 @@
+.tablet-only{
+    display: none;
+}
+
+@include media-breakpoint-between(md, xl){
+    .tablet-only{
+        display: block;
+    }
+}
