@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@theme {
+    /* --color-*: initial; */
+    --color-red: #e53e3e;
+    --color-primary: #1a202c;
+    --color-primary-50: #1a202c22;
+}
+
+.container{
+    @apply w-full mx-auto px-3 sm:max-w-lg md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl
+}

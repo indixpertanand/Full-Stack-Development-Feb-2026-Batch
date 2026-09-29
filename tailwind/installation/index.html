@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>installation</title>
+  <link rel="stylesheet" href="./src/assets/css/style.css">
+</head>
+
+<body>
+  <div class="container pb-12">
+    <div class="bg-blue-600 text-white py-4">Hello, Tailwind CSS!</div>
+    <h2>States</h2>
+    <button
+      class="bg-blue-500 hover:bg-green-500 after:content-['white'] hover:text-amber-300 focus:bg-red-500 text-white font-bold py-2 px-4 rounded">
+      Hover me
+    </button>
+    <input type="text"
+      class="border placeholder:text-fuchsia-500 border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:outline-none rounded-md px-3 py-2"
+      placeholder="Focus me">
+
+    <div class="mt-4 flex flex-col gap-4 lg:gap-7 lg:flex-row">
+      <div class="bg-gray-200 p-4 rounded-md">Box 1</div>
+      <div class="bg-gray-200 p-4 rounded-md">Box 2</div>
+      <div class="bg-gray-200 p-4 rounded-md">Box 3</div>
+      <div class="bg-gray-200 p-4 rounded-md grow @container">
+        <div class="flex gap-3 flex-col @2xl:flex-row">
+          <div class="bg-red-200 p-4 rounded-md">
+            box 4
+          </div>
+          <div class="bg-red-200 p-4 rounded-md">
+            box-5
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="bg-red p-4 text-[24px]">lorem ipsum dolor sit amet</p>
+
+    <div class="inline-block shadow-lg shadow-pink-200 p-4 mt-8 border border-black">Inline Block</div>
+    <div
+      class="inline-block shadow-2xl shadow-amber-600 inset-shadow-sm inset-shadow-emerald-400 p-4 ms-4 mt-8 border border-black">
+      Inline Block</div>
+    <button class="inline-block rounded focus:ring-5 focus:ring-red p-4 ms-4 mt-8 border border-black">Inline
+      Block</button>
+    <div class="py-4 mt-9">
+      <h2 class="text-6xl font-bold text-shadow-lg/30 text-shadow-red-800">This is a heading</h2>
+    </div>
+    <button
+      class="bg-blue-500 hover:bg-green-500 after:content-['white'] hover:text-amber-300 focus:bg-red-500 text-white font-bold py-2 px-4 rounded">
+      Hover me
+    </button>
+    <button
+      class="bg-blue-500 opacity-60 hover:opacity-100 after:content-['white']  focus:bg-red-500 text-white font-bold py-2 px-4 rounded">
+      Hover me
+    </button>
+
+    <div class="bg-primary text-white p-2 inline-block aspect-square rounded-full">Lorem ipsum jgasjdjgsdfk</div>
+ 
+    <h2 class="mt-7 mb-4">Flexbox</h2>
+    <div class="flex justify-between flex-wrap gap-4">
+      <div class="bg-gray-200 w-120 p-4 rounded-md">Box 1</div>
+      <div class="bg-gray-200 w-60  order-1 p-4 rounded-md">Box 2</div>
+      <div class="bg-gray-200 w-60 p-4 rounded-md">Box 3</div>
+    </div>
+    <h2 class="mt-7 mb-4">Grid</h2>
+    <div class="grid grid-cols-4 gap-4">
+      <div class="bg-gray-200 col-span-full p-4 rounded-md">Box 1</div>
+      <div class="bg-gray-200 p-4 rounded-md">Box 2</div>
+      <div class="bg-gray-200 p-4 rounded-md">Box 3</div>
+      <div class="bg-gray-200 p-4 col-span-2 rounded-md">Box 4</div>
+      <div class="bg-gray-200 p-4 rounded-md">Box 5</div>
+      <div class="bg-gray-200 p-4 col-span-2 rounded-md">Box 6</div>
+      <div class="bg-gray-200 p-4 rounded-md">Box 7</div>
+    </div>
+  </div>
+</body>
+
+</html>
