@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object & Classes</title>
+</head>
+<body>
+    <header>
+        <h1>Object & Classes</h1>
+    </header>
+
+    <script>
+
+        let student = {
+            name: "Suraj",
+            qualification: "BCA",
+            age: 24,
+            dob: "24-05-2002",
+            address: {
+                city: "kolkata",
+                state: "West Bangal"
+            }
+            
+        }
+
+        console.log(`Student name is ${student.name}`)
+        console.log(`${student.name} lives in ${student.address.city}`)
+
+        student.name = "Rehan",
+
+        student.address.country = "India";
+
+        console.log(student)
+        console.log(student.language?.includes("Bangla"))
+
+        // Get all Keys
+        console.log("------Get all Keys-----")
+        console.log(Object.keys(student))
+
+        // Get all Values
+        console.log("------Get all Values-----")
+        console.log(Object.values(student))
+
+        // Get all Entries
+        console.log("------Get all Entries-----")
+        console.log(Object.entries(student))
+
+        
+        let student1 = {}
+        Object.assign(student1, student)
+        student.name = "Anand";
+        console.log(student1)
+        console.log(student)
+
+        for (key in student1){
+            console.log(student1[key])
+        }
+
+        // class className {
+                // constructor (values){
+                    //key: value
+                //}
+
+                // Static Methods
+        // }
+
+        class Student{
+            #password;
+            constructor(name, email, phone, qualification, dob, password){
+                this.name = name;
+                this.email = email;
+                this.phone = phone;
+                this.qualification = qualification;
+                this.dob = dob;
+                this.#password = password
+            }
+            getName(){
+                return this.name
+            }
+            getPassword(){
+                return this.#password
+            }
+            setPassword(newPassword){                
+                this.#password = newPassword 
+            }
+        }
+
+        let std1 = new Student("Anand Singh", "anand.singh@indixpert.com", "10202028347", "BCA", "10-05-1997", "12345")
+
+        console.log(std1)
+
+        console.log(std1.name)
+        console.log(std1.phone)
+        console.log(std1.getPassword())
+        std1.name = "Shrawan";
+        std1.setPassword("5675675")
+        console.log(std1.getPassword())
+
+        class Employee extends Student{
+            constructor(name, email, phone, qualification, dob, password, empId, designation, salary){
+                super(name, email, phone, qualification, dob, password);
+                this.empId = empId;
+                this.designation = designation;
+                this.salary = salary;
+            }
+
+            getSalary(){
+                return this.salary
+            }
+        }
+
+        let emp1 = new Employee("Anand Singh", "anand.singh@indixpert.com", "10202028347", "BCA", "10-05-1997", "12345", "1001", "Frontend Developer", "50000")
+        console.log(emp1.getName())
+        console.log(emp1.getPassword())
+    </script>
+</body>
+</html>

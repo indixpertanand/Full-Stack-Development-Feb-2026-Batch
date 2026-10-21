@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in JS</title>
+</head>
+<body>
+    <h1>String in JavaScript</h1>
+
+
+    <script>
+        let str1 = 'This is line 1'
+        let str2 = "This is line 2"
+        let str3 = `This is line 3`;
+
+        console.log(str1)
+        console.log(str2)
+        console.log(str3)
+
+
+        let fName = "Anand";
+        let lName = "Singh";
+
+        // let fullname = fName + " " + lName; 
+        let fullname = `${fName} ${lName}`; 
+
+        console.log(fullname)
+        console.log(`length of fullname = ${fullname.length}`)
+        console.log(`fullname in upper case = ${fullname.toUpperCase()}`)
+        console.log(`fullname in Lower case = ${fullname.toLowerCase()}`)
+        console.log(`fullname is still in title case = ${fullname}`)
+
+        console.log(`character at inded 7 is ${fullname.charAt(7)}`) // i
+        
+        console.log("does fullname contains xyz " + fullname.includes("xyz"))
+        console.log("does fullname contains ing " + "Anand Singh".includes("ing"))
+
+
+        console.log("Extract for index 4 to 8 " + "Anand Singh".slice(4, 9))
+
+
+        console.log("Replace js with JavaScript " + "Hello js".replace("JS", "JavaScript")) // will not work as its is case sensitive
+        console.log("Replace js with JavaScript " + "Hello js".replace(/Js/i, "JavaScript")) // will work as we are asking the match to be case insensitive
+
+        // Trim
+        console.log("    Shahzad   Alam    ".trim().replace(/\s+/, " "))
+        // "    Shahzad   Alam    ".trim() // "Shahzad   Alam".replace(/\s+/, " ")
+
+        let fruits = "Mango, Banana, Cherry kjsahdjk jgsdkjuyatwu jhgasdj";
+        console.log(fruits.split("."))
+        console.log(fruits.split("."))
+
+        let a = 5;
+        a = "Anand"
+    </script>
+
+</body>
+</html>

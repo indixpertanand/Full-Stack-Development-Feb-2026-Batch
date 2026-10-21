@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals & Loops</title>
+</head>
+<body>
+    <h1>JavaScript Conditionals & Loops</h1>  
+    <h2>If</h2>
+    <h2>If else</h2>
+    <h2>else if ladder</h2>
+    <h2>Switch Case</h2>
+    <h2>For loop</h2>
+    <h2>While loop</h2>
+    <h2>Do While loop</h2>
+    <h2>Foreach loop</h2>
+    <script>
+        let age = 15;
+        if (age < 18) {
+            console.log("You are not eligible to watch this movie")
+        }else{
+            console.log("you can proceed with your booking")
+        }
+
+        let studendMark = 55;
+        if(studendMark < 33){
+            console.log("Failed")
+        }else if(studendMark <= 45){
+            console.log("Passed with Grade D")
+        }else if(studendMark < 60){
+            console.log("Passed with Grade C")
+        }else if(studendMark < 75){
+            console.log("Passed with Grade B")
+        }else{
+            console.log("Passed with Grade A")
+        }
+
+        let pickedColor = "Green"
+        switch (pickedColor){
+            case "Red":
+                console.log("You have selected your theme color to RED")
+                break
+            case "Blue":
+                console.log("You have selected your theme color to BLUE")
+                break
+            case "Green":
+                console.log("You have selected your theme color to GREEN")
+                break
+            default:
+                console.log("Please select a valid theme color")
+        }
+        // let stage;
+        // if(age > 18){
+        //     stage = "Adult"
+        // }else{
+        //     stage = "Minor"
+
+        // }
+        // Conditional Operator (? :)
+        let stage = age > 18 ? "Adult" : "Minor";
+
+        // For Loop
+        console.log("-----------For Loop-----------")
+        for(let i = 1; i < 11; i++){
+            console.log(`2 x ${i} = ${2 * i}`)
+        }
+        console.log("-----------While Loop-----------")
+        let i = 1;
+        while(i < 11){
+            console.log(`2 x ${i} = ${2 * i}`);
+            i++;
+        }
+        console.log("----------Do-While Loop-----------")
+        let j = 1;
+        do{
+            console.log(`2 x ${j} = ${2 * j}`);
+            j++;
+        }while(j < 11)
+
+        // Foreach Loop
+        let colors = ["Red", "Green", "Blue", "Aqua"];
+        // for(let i = 0; i < colors.length; i++){
+        //     console.log(colors[i])
+        // }
+        colors.forEach(function(value, i){
+            // javascript code
+            
+            value.split("").forEach( value => console.log(value) )
+        })
+        console.log("---For-of Loop -------------")
+        for (color of colors) {
+            console.log(color)
+        }
+    </script>
+</body>
+</html>

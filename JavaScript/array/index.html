@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Array</title>
+</head>
+<body>
+    <header>
+        <h1>Javascript Array</h1>
+    </header>
+
+    <script>
+        let students = ["Shoaib", "rehan", "Ashi", "Aman", "Faizan", 20, true];
+        console.log(students)
+        // Get length
+        console.log(students.length)
+
+        // Get value by index
+        console.log(students[2])
+
+        // Array Prototype
+        let chars = Array.from("Anand")
+        console.log(chars)
+
+        // Merging Array
+        let arr2 = ["Aryan", "Rayyan", "Sahil"];
+
+        let combinedStudents = students.concat(arr2)
+        console.log(combinedStudents)
+
+        // Find finds first matchng element
+        console.log(combinedStudents.find((name)=> `${name}`.length <= 4));
+        // Filter finds all mathcing elements
+        console.log(combinedStudents.filter((name)=> `${name}`.length <= 4));
+        
+         // Add or remove from end
+        let removedEl = arr2.pop();
+        arr2.push("Anand")
+
+        // Add or remove from start
+        arr2.shift() //Aryan is being removed
+        arr2.unshift(removedEl)
+        
+        console.log(arr2, removedEl)
+
+        // Add & remove from anywhere
+        arr2.splice(1, 0, "Shravan", "Aditya")
+
+        console.log(arr2)
+
+        // get sub array from an array
+        let subarr = arr2.slice(1, )
+        console.log(subarr)
+
+        let str = "Anand Singh"
+        let newStr = str.split(" ").join(",") // ["Anand", "Singh"]
+        console.log(newStr)
+
+        console.log(arr2.includes("Ashi"))
+        console.log(students.includes("Ashi"))
+
+        let updatedArr = arr2.with(4, "Ashi");
+        console.log(arr2)
+        console.log(updatedArr)
+
+        for (name of updatedArr){
+            console.log(name)
+        }
+
+        let x = updatedArr.forEach((name)=>{
+            console.log(name)
+        })
+
+        let transformedArr = updatedArr.map(name => name.length )
+        console.log(transformedArr)
+
+        let totalChars = transformedArr.reduce((acc, val)=> acc + val, 0);
+        console.log(totalChars)
+
+        let numarr = [1, 12, 10, 111, 100]
+        console.log(numarr.sort((a, b)=> b - a))
+    </script>
+</body>
+</html>
