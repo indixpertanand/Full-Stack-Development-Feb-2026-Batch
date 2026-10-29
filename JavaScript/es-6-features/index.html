@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES 6 Features</title>
+</head>
+<body>
+    <header>
+        <h1>ES 6 Features</h1>
+    </header>
+
+    <script>
+        
+        (function (){
+            console.log("This function will run as soon as page will get loaded")
+        })()
+
+        // Destructuring
+        //---Array Destructuring----
+
+        let arr1 = [1, 2, 3, 4, 5, 6, [7, 8], 9];
+        // let a =  arr1[0]
+        // let b =  arr1[1]
+        // let c =  arr1[2]
+        //---- Rest Operator in Array -----
+        let [a, b, c, ...rest] = arr1
+
+        console.log(a, b, c)
+        console.log(rest)
+
+        // Spread Operator
+        let arr2 = [...arr1]
+
+        arr2[6][0] = 10
+        console.log(arr2[6])
+        console.log(arr1[6])
+        
+        //---Object Destructuring and rest operator----
+        let student = {
+            fullname: "Shoaib",
+            age: "24",
+            gender: "Male",
+            city: "Jodhpur",
+            state: "Rajasthan",
+            country: "India",
+            obtainedMarks : [60, 67, 78, 80, 59]
+        }        
+        console.log(student.fullname)
+
+        let {age, fullname: name, gender, ...address} = student
+
+        console.log(name)
+        console.log(address)
+
+        // Spread Operator in Objects
+        let student2 = {...student}
+        console.log(student2)
+        student2.obtainedMarks[0] = 80;
+        console.log(student2.obtainedMarks)
+        console.log(student.obtainedMarks)
+
+        // To Deep copy objects or Arrays 
+        let arr3 = JSON.parse(JSON.stringify(arr1));
+        arr3[6][0] = 20
+        console.log(arr3[6])
+        console.log(arr1[6])
+
+        
+        function printNameCity(obj){
+            const {fullname: name, city} = obj
+            console.log(`${name} from ${city}`)
+        }
+        function printName({fullname: name}){
+            console.log(`${name}`)
+        }
+        printName(student)
+        printNameCity(student)
+
+        // Hoisting
+
+        // console.log(y)
+
+        var x = 10;
+        let y = 20;
+        const z = 30;
+
+        console.log(JSON.parse(JSON.stringify(arr1)))
+        console.log(JSON.parse("[1, 2, 3, [4, 5], 6, 7]"))
+
+
+        // Clousers
+        function counter(){
+            let count = 0;
+            return function(){
+                return count += 1;
+            }
+        }
+
+        let count = counter();
+        console.log(count())
+        console.log(count())
+        console.log(count())
+        console.log(count())
+        console.log(count())
+        console.log(count())
+    </script>
+</body>
+</html>

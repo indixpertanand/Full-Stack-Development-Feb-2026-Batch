@@ -80,6 +80,28 @@
 
         let numarr = [1, 12, 10, 111, 100]
         console.log(numarr.sort((a, b)=> b - a))
+
+        function myMap(fn){
+            let arr = []
+            for(let i = 0; i < this.length; i++){
+                let newel = fn(this[i], i)
+                arr.push(newel);
+            }
+            return arr
+
+        }
+
+        Array.prototype.myMap = myMap;
+        
+
+        let res = numarr.myMap(function(val, index){
+            return val * 2
+        })
+
+        console.log(numarr)
+        console.log(res)
+        
+
     </script>
 </body>
 </html>

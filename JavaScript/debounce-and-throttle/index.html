@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debounce & Throttling</title>
+</head>
+<body>
+    <header><h1>Debounce & Throttling</h1></header>
+    <main>
+        <form action="">
+            <input type="search" id="searchInput" placeholder="search here">
+        </form>
+        <h2>API Called <span id="apiCount">0</span></h2>
+        <h2>API Called Debounce<span id="debounceCount">0</span></h2>
+        <h2>API Called Throttle<span id="throttleCount">0</span></h2>
+    </main>
+
+    <script>
+        
+        let apiCallCount = 0;
+        let debounceCount = 0;
+        let throttleCount = 0;
+        function callApi(e){
+            let apiCallCountEl = document.getElementById("apiCount");
+            apiCallCount += 1;
+            apiCallCountEl.textContent = apiCallCount + e.target.value
+        }
+        function callApiDebounce(e){
+            let debounceCountEl = document.getElementById("debounceCount");
+            debounceCount += 1;
+            debounceCountEl.textContent = debounceCount + e.target.value
+        }
+        function callApiThrottle(e){
+            let throttleCountEl = document.getElementById("throttleCount");
+            throttleCount += 1;
+            throttleCountEl.textContent = throttleCount + e.target.value
+        }
+        let inputel = document.getElementById("searchInput")
+        inputel.addEventListener("input", callApi)
+
+        inputel.addEventListener("input", debounce(callApiDebounce, 400))
+        inputel.addEventListener("input", throttle(callApiThrottle, 300))
+
+        function debounce(fn, delay){
+            let timer;
+            return function(...args){
+                clearTimeout(timer)
+                timer = setTimeout(()=>{
+                    fn.apply(this, args)
+                }, delay)
+            }
+        }
+        
+        function handleresize(){
+            console.log(window.innerWidth)
+        }
+        window.addEventListener("resize", throttle(handleresize, 200))
+
+        function throttle(fn, delay){
+            let lastCall = 0; let timer;
+            return function(...args){
+                if(Date.now() - lastCall >= delay){
+                    lastCall = Date.now()
+                    fn.apply(this, args);
+                }else{
+                    clearTimeout(timer)
+                    timer = setTimeout(()=>{
+                        fn.apply(this, args)
+                    }, delay) 
+                }
+            }
+        }
+    </script>
+</body>
+</html>
